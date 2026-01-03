@@ -1,0 +1,133 @@
+/* styles.css */
+
+/* Main content container */
+#main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* Container for food items */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Individual food item */
+.food-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px); /* Adjust based on the number of items per row */
+    text-align: center;
+    display: inline-block; /* Display items side by side */
+    margin-right: 20px; /* Optional: Add some space between items */
+    margin-bottom: 20px; /* Optional: Add some space below items */
+    vertical-align: top; /* Align items to the top of their container */
+}
+
+/* Selected food items container */
+#selected-items {
+    margin-top: 20px;
+}
+
+/* Individual selected food item */
+.selected-item {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Total cost */
+#total-cost {
+    font-weight: bold;
+    color: #333;
+}
+/* navbar.css */
+
+/* Navigation bar */
+#navbar {
+    background-color: #333333; /* Background color */
+    padding: 10px 20px; /* Padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navigation links */
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#navbar ul li {
+    margin-right: 20px;
+}
+
+#navbar ul li a {
+    color: #fff; /* Link color */
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+#navbar ul li a:hover {
+    color: #ddd; /* Color on hover */
+}
+#welcome-user {
+    color: #fff; /* Text color */
+    font-size: 1.2em; /* Font size */
+    font-weight: bold; /* Font weight */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 1px; /* Letter spacing */
+    transition: color 0.3s; /* Smooth color transition */
+}
+#checkout {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 300px;
+    margin-top: 20px; /* Optional: Add some margin from the top */
+    margin-right: 20px; /* Optional: Add some margin from the right */
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Sidebar styles */
+.sidebar {
+    flex: 0 0 250px;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Main content styles */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+}
+/*remove botton*/
+
+.selected-item button {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    background: red;
+    color: white;
+    padding: 6px;
+}
+

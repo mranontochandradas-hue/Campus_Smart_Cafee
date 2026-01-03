@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #d5cccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-container {
+      background-color: rgb(255, 255, 255);
+      padding: 40px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .login-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+    }
+
+    .input-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .input-group label {
+  display: inline-block;
+  width: 300px; 
+    }
+.input-group input[type="radio"] {
+  transform: scale(0.95); 
+  margin-right: 5px;
+}
+
+  </style>
+  <div class="login-container">
+    <form action="login.php" method="post">
+      <h2>Login</h2>
+      <div class="input-group">
+        <label>User Type:</label><br>
+        <input type="radio" id="Student" name="user_type" value="Student" required>
+        <label for="Student">Student</label><br>
+         <input type="radio" id="faculty" name="user_type" value="faculty">
+        <label for="faculty">Faculty</label><br>
+        <input type="radio" id="admin" name="user_type" value="admin">
+        <label for="admin">Admin</label><br>
+      </div>
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="email" required />
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+      </div>
+  
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>
